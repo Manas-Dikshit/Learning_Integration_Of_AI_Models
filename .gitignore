@@ -1,14 +1,26 @@
-# Byte-compiled / optimized / DLL files
+# ================================
+# Python cache / compiled files
+# ================================
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
+*.pyd
+*.pyc
 
+# ================================
 # C extensions
+# ================================
 *.so
+*.dll
+*.dylib
 
+# ================================
 # Distribution / packaging
+# ================================
 .Python
 build/
+develop-eggs/
 dist/
 downloads/
 eggs/
@@ -18,76 +30,172 @@ lib64/
 parts/
 sdist/
 var/
+wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
-# Installer logs
+# ================================
+# PyInstaller
+# ================================
+*.manifest
+*.spec
+
+# ================================
+# pip / installer logs
+# ================================
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# ================================
+# Unit test / coverage
+# ================================
 htmlcov/
 .tox/
 .nox/
 .coverage
 .coverage.*
 .cache
+pytest_cache/
 nosetests.xml
 coverage.xml
-*,cover
+*.cover
+*.py,cover
 
-# pyenv
-.python-version
-
-# virtualenv
-venv/
-ENV/
-env/
-.venv/
-
-# VS Code
-.vscode/
-
-# PyCharm
-.idea/
-
-# Jupyter
+# ================================
+# Jupyter Notebook
+# ================================
 .ipynb_checkpoints
 
-# macOS
-.DS_Store
+# ================================
+# pyenv
+# ================================
+.python-version
 
-# Windows
-Thumbs.db
-desktop.ini
+# ================================
+# Virtual environments
+# ================================
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
 
-# dotenv
+# ================================
+# Environment variables
+# ================================
 .env
 .env.*
+*.env
 
-# model files and weights
-*.safetensors
+# ================================
+# IDEs and Editors
+# ================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ================================
+# macOS files
+# ================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ================================
+# Windows files
+# ================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ================================
+# Linux
+# ================================
+*~
+
+# ================================
+# Logs
+# ================================
+logs/
+*.log
+log/
+
+# ================================
+# Temporary files
+# ================================
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ================================
+# Dataset folders
+# ================================
+data/
+dataset/
+datasets/
+training_data/
+
+# ================================
+# Machine learning models
+# ================================
+*.h5
+*.hdf5
 *.pt
 *.pth
 *.ckpt
 *.ckpt.*
 *.bin
+*.onnx
+*.pb
+*.tflite
+*.safetensors
 
-# project model file(s)
+# ================================
+# Model folders
+# ================================
+models/
+weights/
+checkpoints/
+
+# specific model directory
 sign_model/*.safetensors
 
-# logs and temp
-logs/
-*.log
-tmp/
-temp/
+# ================================
+# Generated outputs
+# ================================
+outputs/
+results/
+predictions/
+reports/
 
-# datasets
-data/
-datasets/
+# ================================
+# Archives
+# ================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
 
-# backups
-*.bak
-*.tmp
-.zip
+# ================================
+# Large media
+# ================================
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# ================================
+# Misc
+# ================================
+.gitattributes
+*.sqlite3
+*.db
